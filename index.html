@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raj Traders - Premier Gym, Fitness Hub & Nutrition Centre | Jaunpur City</title>
+    <meta name="description" content="Raj Traders, Jaunpur City. Founded by Rider in 2022. 'Always Focus On Quality' — Premium strength equipment, HIIT cardio, 100% genuine supplements, yoga & personalized transformation coaching. Special 20% discount for regular members!">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Raj Traders - Gym, Fitness & Nutrition Hub | Jaunpur City">
+    <meta property="og:description" content="Always Focus on Quality. Premium fitness coaching, genuine sports nutrition, and 20% off for regular members.">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: "#ecfdf5",
+                            100: "#d1fae5",
+                            200: "#a7f3d0",
+                            300: "#6ee7b7",
+                            400: "#34d399",
+                            500: "#10b981",
+                            600: "#059669",
+                            700: "#047857",
+                            800: "#065f46",
+                            900: "#064e3b",
+                            950: "#022c22"
+                        },
+                        amber: {
+                            400: "#fbbf24",
+                            500: "#f59e0b",
+                            600: "#d97706"
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(2, 44, 34, 0.94) 0%, rgba(6, 78, 59, 0.88) 50%, rgba(2, 44, 34, 0.96) 100%),
+                        url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&auto=format&fit=crop&q=80') center/cover no-repeat;
+        }
+        .glow-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glow-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 30px -10px rgba(16, 185, 129, 0.25);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-slate-800 bg-slate-50 selection:bg-brand-500 selection:text-white pb-16 md:pb-0">
+
+    <!-- Top Announcement Bar: Special Offer -->
+    <div class="bg-gradient-to-r from-brand-950 via-brand-900 to-emerald-800 text-white text-center py-2.5 px-4 text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 shadow-md">
+        <span class="inline-flex items-center justify-center px-2.5 py-0.5 rounded-full bg-amber-400 text-slate-950 text-[11px] font-black uppercase tracking-wider animate-pulse">
+            Special Offer
+        </span>
+        <span class="flex items-center gap-1.5 flex-wrap justify-center">
+            <i data-lucide="sparkles" class="w-4 h-4 text-amber-300"></i>
+            <strong>Loyalty Privilege:</strong> Flat <strong>20% OFF</strong> for Regular Members & Customers on all Gym Packages & Nutrition Stacks!
+        </span>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Brand Identity with Self-Contained Inline Vector SVG Crest Emblem -->
+                <a href="#" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-brand-950 via-brand-900 to-brand-700 p-2 text-white shadow-md shadow-brand-900/30 border border-amber-400/70 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                        <svg class="w-full h-full" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Crest Shield Background -->
+                            <path d="M50 5 L88 20 V52 C88 74 50 95 50 95 C50 95 12 74 12 52 V20 Z" fill="#064e3b" stroke="#fbbf24" stroke-width="2.5"/>
+                            <!-- Energy Laurel / Rays -->
+                            <path d="M24 45 C22 35 30 25 40 24" stroke="#34d399" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M76 45 C78 35 70 25 60 24" stroke="#34d399" stroke-width="2" stroke-linecap="round"/>
+                            <!-- Powerful Golden Dumbbell -->
+                            <rect x="25" y="47" width="8" height="14" rx="2" fill="#fbbf24"/>
+                            <rect x="20" y="50" width="5" height="8" rx="1.5" fill="#f59e0b"/>
+                            <rect x="67" y="47" width="8" height="14" rx="2" fill="#fbbf24"/>
+                            <rect x="75" y="50" width="5" height="8" rx="1.5" fill="#f59e0b"/>
+                            <rect x="33" y="52" width="34" height="4" rx="2" fill="#fbbf24"/>
+                            <!-- Monogram RT Medallion -->
+                            <circle cx="50" cy="74" r="11" fill="#022c22" stroke="#fbbf24" stroke-width="1.5"/>
+                            <text x="50" y="78" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" font-weight="900" fill="#fbbf24" text-anchor="middle">RT</text>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-xl sm:text-2xl font-black tracking-tight text-slate-900 group-hover:text-brand-700 transition-colors">Raj Traders</span>
+                            <span class="hidden sm:inline-block px-2 py-0.5 text-[10px] font-extrabold uppercase bg-brand-100 text-brand-800 rounded-full border border-brand-200">Jaunpur</span>
+                        </div>
+                        <p class="text-xs font-semibold text-slate-500 tracking-wide uppercase">Gym, Fitness & Nutrition Hub</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="#about" class="text-sm font-semibold text-slate-600 hover:text-brand-600 transition-colors">About Us</a>
+                    <a href="#services" class="text-sm font-semibold text-slate-600 hover:text-brand-600 transition-colors">Programs & Gear</a>
+                    <a href="#founder" class="text-sm font-semibold text-slate-600 hover:text-brand-600 transition-colors">Founder's Note</a>
+                    <a href="#offer" class="text-sm font-semibold text-slate-600 hover:text-brand-600 transition-colors">Special 20% Offer</a>
+                    <a href="#contact" class="text-sm font-semibold text-slate-600 hover:text-brand-600 transition-colors">Contact</a>
+                </nav>
+
+                <!-- Header Actions -->
+                <div class="flex items-center gap-3">
+                    <a href="tel:2536374746" class="inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white px-4 py-2.5 rounded-xl font-bold text-sm shadow-md shadow-brand-600/20 transition-all hover:scale-105 active:scale-95">
+                        <i data-lucide="phone-call" class="w-4 h-4"></i>
+                        <span class="hidden sm:inline">Call:</span> 2536374746
+                    </a>
+                    <a href="https://wa.me/915836528567?text=Hi%20Raj%20Traders,%20I%20am%20interested%20in%20gym%20membership%20and%20supplements." target="_blank" rel="noopener noreferrer" class="hidden lg:inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2.5 rounded-xl font-bold text-sm shadow-md shadow-emerald-500/20 transition-all hover:scale-105">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative hero-bg text-white py-20 lg:py-28 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    
+                    <!-- Trust Badge -->
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-brand-400/30 text-brand-200 text-xs sm:text-sm font-medium">
+                        <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+                        <span>Established 2022 • Jaunpur City's Premier Fitness Centre</span>
+                    </div>
+
+                    <!-- Main Headline -->
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15]">
+                        Always Focus On <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-emerald-300 to-white">Quality.</span><br/>
+                        Transform Your Body & Mind.
+                    </h1>
+
+                    <!-- Subheading -->
+                    <p class="text-base sm:text-lg text-slate-200 max-w-2xl font-normal leading-relaxed">
+                        Welcome to <strong>Raj Traders</strong> — where commitment meets world-class strength. We stand by one core promise: <em>First experience our high-grade machines and 100% verified nutrition, then trust our results.</em>
+                    </p>
+
+                    <!-- Trust Points / Metrics -->
+                    <div class="grid grid-cols-3 gap-3 pt-2 max-w-lg mx-auto lg:mx-0">
+                        <div class="p-3 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 text-center">
+                            <p class="text-2xl font-black text-amber-400">2022</p>
+                            <p class="text-[11px] sm:text-xs text-slate-300 font-medium">Established</p>
+                        </div>
+                        <div class="p-3 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 text-center">
+                            <p class="text-2xl font-black text-emerald-400">20% OFF</p>
+                            <p class="text-[11px] sm:text-xs text-slate-300 font-medium">Regular Members</p>
+                        </div>
+                        <div class="p-3 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 text-center">
+                            <p class="text-2xl font-black text-white">100%</p>
+                            <p class="text-[11px] sm:text-xs text-slate-300 font-medium">Genuine Quality</p>
+                        </div>
+                    </div>
+
+                    <!-- Call To Action Buttons -->
+                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="tel:2536374746" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-500 hover:to-amber-600 text-slate-950 font-extrabold px-8 py-4 rounded-xl shadow-lg shadow-amber-500/25 transition-all hover:scale-105 active:scale-95 text-base">
+                            <i data-lucide="phone-outgoing" class="w-5 h-5"></i>
+                            Call Rider (Direct)
+                        </a>
+                        <a href="https://wa.me/915836528567?text=Hello%20Rider,%20I%20want%20to%20join%20Raj%20Traders%20Gym%20and%20know%20about%20the%2020%%20offer." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-white/10 hover:bg-white/20 text-white border border-white/20 font-bold px-7 py-4 rounded-xl backdrop-blur-md transition-all hover:scale-105 text-base">
+                            <i data-lucide="message-square" class="w-5 h-5 text-emerald-400"></i>
+                            WhatsApp Inquiry
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Right Card: Quick Info & Daily Timings -->
+                <div class="lg:col-span-5">
+                    <div class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-6 sm:p-8 shadow-2xl relative overflow-hidden">
+                        
+                        <div class="absolute -top-12 -right-12 w-40 h-40 bg-brand-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+                        <div class="flex items-center gap-3 border-b border-white/10 pb-4 mb-5">
+                            <div class="w-10 h-10 rounded-xl bg-amber-400 text-slate-950 flex items-center justify-center font-bold">
+                                <i data-lucide="clock" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-white">Facility & Center Hours</h3>
+                                <p class="text-xs text-brand-200">Open 7 Days a Week in Jaunpur City</p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4 text-sm">
+                            <div class="flex items-center justify-between p-3 rounded-xl bg-black/20 border border-white/5">
+                                <span class="text-slate-300 font-medium flex items-center gap-2">
+                                    <i data-lucide="sun" class="w-4 h-4 text-amber-400"></i>
+                                    Morning Training Shift
+                                </span>
+                                <span class="font-bold text-white">6:00 AM – 12:00 PM</span>
+                            </div>
+
+                            <div class="flex items-center justify-between p-3 rounded-xl bg-brand-900/60 border border-brand-400/30">
+                                <span class="text-emerald-200 font-medium flex items-center gap-2">
+                                    <i data-lucide="store" class="w-4 h-4 text-emerald-400"></i>
+                                    Official Desk & Store
+                                </span>
+                                <span class="font-bold text-amber-300">9:00 AM – 12:00 PM</span>
+                            </div>
+
+                            <div class="flex items-center justify-between p-3 rounded-xl bg-black/20 border border-white/5">
+                                <span class="text-slate-300 font-medium flex items-center gap-2">
+                                    <i data-lucide="moon" class="w-4 h-4 text-indigo-400"></i>
+                                    Evening Transformation Shift
+                                </span>
+                                <span class="font-bold text-white">4:30 PM – 9:30 PM</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-5 border-t border-white/10 flex items-center gap-3">
+                            <div class="w-9 h-9 rounded-full bg-emerald-500/20 text-emerald-300 flex items-center justify-center shrink-0">
+                                <i data-lucide="map-pin" class="w-4 h-4"></i>
+                            </div>
+                            <div class="text-xs">
+                                <p class="text-slate-300 font-medium">Location</p>
+                                <p class="text-white font-bold">Jaunpur City, Uttar Pradesh</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us / Value Proposition -->
+    <section id="about" class="py-16 bg-white border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-brand-600 font-bold text-xs uppercase tracking-widest bg-brand-50 px-3 py-1 rounded-full border border-brand-200">The Raj Traders Philosophy</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">
+                    "First Experience The Quality, Then Trust The Brand"
+                </h2>
+                <p class="text-slate-600 mt-3 text-base leading-relaxed">
+                    At Raj Traders, fitness is not just about moving weights — it is an uncompromising pursuit of strength, longevity, and genuine health. Since our establishment in 2022, we have brought top-tier standards to Jaunpur City.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-brand-300 transition-all glow-card">
+                    <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center mb-4">
+                        <i data-lucide="dumbbell" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Heavy-Duty Gear</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Calibrated Olympic plates, biomechanically accurate isolation machines, and power cages for safe, maximum gains.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-brand-300 transition-all glow-card">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center mb-4">
+                        <i data-lucide="shield-check" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">100% Genuine Nutrition</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Zero counterfeit products. Fully authenticated whey proteins, creatine, and vitamins with batch verification.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-brand-300 transition-all glow-card">
+                    <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center mb-4">
+                        <i data-lucide="target" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Personal Mentorship</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Form correction, progressive overload tracking, and personalized guidance led directly by Founder Rider.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-brand-300 transition-all glow-card">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-700 flex items-center justify-center mb-4">
+                        <i data-lucide="sparkles" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Hygienic & Vibrant Space</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Air-conditioned workout zones, continuous sanitization, motivating acoustics, and friendly community spirit.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6 Comprehensive Program & Product Cards -->
+    <section id="services" class="py-20 bg-slate-100/70">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-14">
+                <div>
+                    <span class="text-brand-700 font-bold text-xs uppercase tracking-widest bg-brand-100 px-3 py-1 rounded-full border border-brand-200">Our Comprehensive Offerings</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">
+                        Everything You Need For Peak Performance
+                    </h2>
+                </div>
+                <p class="text-slate-600 text-sm max-w-md mt-3 md:mt-0">
+                    From free weights to sports nutrition supplements and mindful yoga, explore our complete catalog.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-200/80 glow-card flex flex-col">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=800&auto=format&fit=crop&q=80" alt="Strength & Muscle Building" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-brand-900/80 backdrop-blur-md text-amber-300 text-xs font-bold px-3 py-1 rounded-full border border-amber-300/30">
+                            Strength Arena
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Heavy Strength & Bodybuilding Zone</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">
+                                Olympic flat, incline and decline benches, heavy dumbbells up to 50kg, squat racks, and specialized cable stations built for maximum hypertrophy and raw power.
+                            </p>
+                        </div>
+                        <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
+                            <span class="text-xs font-semibold text-brand-700 flex items-center gap-1">
+                                <i data-lucide="check" class="w-3.5 h-3.5"></i> All Experience Levels
+                            </span>
+                            <a href="tel:2536374746" class="text-xs font-bold text-slate-900 hover:text-brand-600 inline-flex items-center gap-1">Inquire <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-200/80 glow-card flex flex-col">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=800&auto=format&fit=crop&q=80" alt="Cardio & Fat Loss Conditioning" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-brand-900/80 backdrop-blur-md text-emerald-300 text-xs font-bold px-3 py-1 rounded-full border border-emerald-300/30">
+                            Fat Loss & Stamina
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Cardio, HIIT & Endurance Training</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">
+                                Motorized shock-absorbing treadmills, magnetic cross trainers, spin bikes, and battle ropes for intense cardiovascular conditioning and accelerated fat loss.
+                            </p>
+                        </div>
+                        <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
+                            <span class="text-xs font-semibold text-brand-700 flex items-center gap-1">
+                                <i data-lucide="heart-pulse" class="w-3.5 h-3.5"></i> Heart Health & Stamina
+                            </span>
+                            <a href="tel:2536374746" class="text-xs font-bold text-slate-900 hover:text-brand-600 inline-flex items-center gap-1">Inquire <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-200/80 glow-card flex flex-col">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1593095948071-474c5cc2989d?w=800&auto=format&fit=crop&q=80" alt="100% Genuine Nutrition & Supplements" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-amber-500 text-slate-950 text-xs font-extrabold px-3 py-1 rounded-full shadow-md">
+                            100% Authentic
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Sports Nutrition & Genuine Supplements</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">
+                                Verified Whey Protein Isolate, Creatine Monohydrate, BCAAs, Multivitamins, and pre-workouts sourced directly from certified distributors. Batch verification guaranteed!
+                            </p>
+                        </div>
+                        <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
+                            <span class="text-xs font-bold text-amber-600 flex items-center gap-1">
+                                <i data-lucide="badge-percent" class="w-3.5 h-3.5"></i> 20% OFF Regular Buyers
+                            </span>
+                            <a href="tel:2536374746" class="text-xs font-bold text-slate-900 hover:text-brand-600 inline-flex items-center gap-1">Order <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-200/80 glow-card flex flex-col">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=800&auto=format&fit=crop&q=80" alt="Personalized Transformation Coaching" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-brand-900/80 backdrop-blur-md text-amber-300 text-xs font-bold px-3 py-1 rounded-full border border-amber-300/30">
+                            1-on-1 Coaching
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Personalized Transformation Mentorship</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">
+                                Get hands-on coaching by Rider. Custom workout splits, correct lifting posture to prevent injury, and structured progressive overload plans suited to your lifestyle.
+                            </p>
+                        </div>
+                        <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
+                            <span class="text-xs font-semibold text-brand-700 flex items-center gap-1">
+                                <i data-lucide="user-check" class="w-3.5 h-3.5"></i> Custom Roadmap
+                            </span>
+                            <a href="tel:2536374746" class="text-xs font-bold text-slate-900 hover:text-brand-600 inline-flex items-center gap-1">Enroll <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-200/80 glow-card flex flex-col">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=800&auto=format&fit=crop&q=80" alt="Yoga, Mobility & Flexibility" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-brand-900/80 backdrop-blur-md text-emerald-300 text-xs font-bold px-3 py-1 rounded-full border border-emerald-300/30">
+                            Mind & Flexibility
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Yoga, Mobility & Core Conditioning</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">
+                                Enhance joint mobility, release postural tension from sedentary desk work, and build deep core stability with structured morning stretching and yoga asanas.
+                            </p>
+                        </div>
+                        <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
+                            <span class="text-xs font-semibold text-brand-700 flex items-center gap-1">
+                                <i data-lucide="smile" class="w-3.5 h-3.5"></i> Injury Recovery
+                            </span>
+                            <a href="tel:2536374746" class="text-xs font-bold text-slate-900 hover:text-brand-600 inline-flex items-center gap-1">Inquire <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-200/80 glow-card flex flex-col">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&auto=format&fit=crop&q=80" alt="Dietary Macro & Progress Tracking" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-brand-900/80 backdrop-blur-md text-amber-300 text-xs font-bold px-3 py-1 rounded-full border border-amber-300/30">
+                            Nutrition Guidance
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Diet Consultation & Body Composition</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">
+                                Personalized macro calculations (proteins, carbs, healthy fats), local Indian food meal planning, and weekly progress measurements to guarantee visible progress.
+                            </p>
+                        </div>
+                        <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
+                            <span class="text-xs font-semibold text-brand-700 flex items-center gap-1">
+                                <i data-lucide="scale" class="w-3.5 h-3.5"></i> Practical Indian Diet
+                            </span>
+                            <a href="tel:2536374746" class="text-xs font-bold text-slate-900 hover:text-brand-600 inline-flex items-center gap-1">Consult <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder's Message Card -->
+    <section id="founder" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-brand-950 via-brand-900 to-slate-900 rounded-3xl p-8 sm:p-12 text-white relative overflow-hidden shadow-xl">
+                
+                <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-brand-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="grid lg:grid-cols-12 gap-8 items-center relative z-10">
+                    
+                    <div class="lg:col-span-4 text-center lg:text-left">
+                        <div class="w-24 h-24 mx-auto lg:mx-0 rounded-2xl bg-gradient-to-tr from-amber-400 to-emerald-400 p-1 mb-4 shadow-lg">
+                            <div class="w-full h-full bg-brand-950 rounded-xl flex items-center justify-center text-amber-300">
+                                <i data-lucide="award" class="w-10 h-10"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-black text-white">Rider</h3>
+                        <p class="text-amber-400 text-sm font-bold uppercase tracking-wider">Founder & Head Coach</p>
+                        <p class="text-xs text-slate-300 mt-1">Leading Raj Traders Since 2022</p>
+                        <div class="mt-4 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-xs font-semibold text-slate-200">
+                            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-emerald-400"></i> Jaunpur City, UP
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-8 space-y-4 border-t lg:border-t-0 lg:border-l border-white/10 pt-6 lg:pt-0 lg:pl-10">
+                        <i data-lucide="quote" class="w-8 h-8 text-amber-400/80"></i>
+                        <p class="text-lg sm:text-xl text-slate-200 font-medium leading-relaxed italic">
+                            "When we started Raj Traders in 2022, my motto was simple: <strong>'Always focus on quality'</strong>. There are many places where you can buy supplements or lift weights, but true results come from authenticity. We welcome everyone in Jaunpur to come in, inspect our products, try our facility, and experience our dedication firsthand. Your health and fitness is our highest priority."
+                        </p>
+                        <div class="pt-2 flex flex-wrap items-center gap-6 text-sm text-slate-300">
+                            <span class="flex items-center gap-1.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i> 100% Quality Focus</span>
+                            <span class="flex items-center gap-1.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i> Honest Guidance</span>
+                            <span class="flex items-center gap-1.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i> 20% Regular Customer Discount</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offer Highlight Banner -->
+    <section id="offer" class="py-12 bg-gradient-to-r from-amber-500 via-amber-400 to-emerald-500 text-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-6 text-center lg:text-left">
+                
+                <div class="space-y-1">
+                    <span class="inline-block px-3 py-0.5 rounded-full bg-slate-950 text-amber-300 font-extrabold text-xs uppercase tracking-wider">
+                        Exclusive Member Privilege
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-black tracking-tight">
+                        Enjoy Flat 20% Discount For All Regular Customers!
+                    </h2>
+                    <p class="text-sm font-semibold text-slate-900 max-w-2xl">
+                        Whether renewing your gym membership or restocking your monthly whey protein and creatine, regular members get an instant 20% savings.
+                    </p>
+                </div>
+
+                <div class="flex flex-wrap items-center justify-center gap-3 shrink-0">
+                    <a href="tel:2536374746" class="inline-flex items-center gap-2 bg-slate-950 hover:bg-slate-900 text-white font-extrabold px-6 py-3.5 rounded-xl shadow-lg transition-all hover:scale-105 active:scale-95 text-sm">
+                        <i data-lucide="phone" class="w-4 h-4 text-amber-400"></i>
+                        Claim via Call: 2536374746
+                    </a>
+                    <a href="https://wa.me/915836528567?text=Hi%20Rider,%20I%20want%20to%20claim%20the%2020%%20discount%20for%20regular%20members." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-white hover:bg-slate-100 text-slate-950 font-extrabold px-6 py-3.5 rounded-xl shadow-md transition-all hover:scale-105 text-sm">
+                        <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i>
+                        WhatsApp Claim
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location Section -->
+    <section id="contact" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Details -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <span class="text-brand-700 font-bold text-xs uppercase tracking-widest bg-brand-100 px-3 py-1 rounded-full border border-brand-200">Connect With Us</span>
+                        <h2 class="text-3xl font-extrabold text-slate-900 mt-2">Visit Raj Traders In Jaunpur City</h2>
+                        <p class="text-slate-600 text-sm mt-2">
+                            Drop by our fitness center, consult with Founder Rider, or call us for pricing and supplement advice.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4 pt-2">
+                        
+                        <a href="tel:2536374746" class="flex items-center gap-4 p-4 rounded-2xl bg-white border border-slate-200/80 hover:border-brand-300 shadow-sm transition-all group">
+                            <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                                <i data-lucide="phone-call" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-semibold text-slate-500 uppercase">Primary Phone</p>
+                                <p class="text-base font-bold text-slate-900 group-hover:text-brand-700 transition-colors">2536374746</p>
+                            </div>
+                        </a>
+
+                        <a href="https://wa.me/915836528567?text=Hi%20Raj%20Traders,%20please%20share%20fitness%20details." target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-4 rounded-2xl bg-white border border-slate-200/80 hover:border-emerald-300 shadow-sm transition-all group">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                                <i data-lucide="message-circle" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-semibold text-slate-500 uppercase">WhatsApp Quick Chat</p>
+                                <p class="text-base font-bold text-slate-900 group-hover:text-emerald-700 transition-colors">+91 5836528567</p>
+                            </div>
+                        </a>
+
+                        <a href="mailto:dhhsc4746@gmail.com" class="flex items-center gap-4 p-4 rounded-2xl bg-white border border-slate-200/80 hover:border-brand-300 shadow-sm transition-all group">
+                            <div class="w-12 h-12 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                                <i data-lucide="mail" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-semibold text-slate-500 uppercase">Official Email</p>
+                                <p class="text-base font-bold text-slate-900 group-hover:text-brand-700 transition-colors">dhhsc4746@gmail.com</p>
+                            </div>
+                        </a>
+
+                        <div class="flex items-center gap-4 p-4 rounded-2xl bg-white border border-slate-200/80 shadow-sm">
+                            <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center shrink-0">
+                                <i data-lucide="map-pin" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-semibold text-slate-500 uppercase">Location & Address</p>
+                                <p class="text-base font-bold text-slate-900">Jaunpur City, Uttar Pradesh</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Inquiry / Registration Form -->
+                <div class="lg:col-span-7">
+                    <div class="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-md">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-10 h-10 rounded-xl bg-brand-600 text-white flex items-center justify-center font-bold">
+                                <i data-lucide="send" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900">Send Direct Fitness Inquiry</h3>
+                                <p class="text-xs text-slate-500">We respond promptly via Call or WhatsApp</p>
+                            </div>
+                        </div>
+
+                        <form onsubmit="handleInquiry(event)" class="space-y-4">
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Your Full Name</label>
+                                    <input type="text" id="inq_name" required placeholder="e.g. Rahul Verma" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Phone Number</label>
+                                    <input type="tel" id="inq_phone" required placeholder="e.g. 9876543210" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Interested In</label>
+                                <select id="inq_service" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm bg-white">
+                                    <option value="Gym Membership & Training">Gym Membership & Training (General / Personal)</option>
+                                    <option value="Genuine Nutrition Supplements">100% Genuine Nutrition Supplements (Whey / Creatine)</option>
+                                    <option value="Fat Loss & HIIT Conditioning">Fat Loss & HIIT Cardio Conditioning</option>
+                                    <option value="Yoga & Mobility Classes">Yoga & Flexibility Sessions</option>
+                                    <option value="Claim 20% Regular Member Discount">Claim 20% Regular Customer Discount</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Your Goals or Questions</label>
+                                <textarea id="inq_message" rows="3" placeholder="Tell us about your fitness goal or requirements..." class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-extrabold py-3.5 rounded-xl shadow-lg shadow-brand-600/25 transition-all hover:scale-[1.01] flex items-center justify-center gap-2 text-sm">
+                                <i data-lucide="send" class="w-4 h-4"></i>
+                                Submit Inquiry via WhatsApp
+                            </button>
+                        </form>
+
+                        <div id="formSuccess" class="hidden mt-4 p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-semibold text-center">
+                            Thank you! Redirecting to WhatsApp with your details...
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-950 text-slate-300 pt-16 pb-12 border-t border-brand-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+                
+                <!-- Brand Info with Inline Vector SVG Crest Emblem -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-brand-900 p-1.5 border border-amber-400/80 flex items-center justify-center">
+                            <svg class="w-full h-full" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M50 5 L88 20 V52 C88 74 50 95 50 95 C50 95 12 74 12 52 V20 Z" fill="#064e3b" stroke="#fbbf24" stroke-width="3"/>
+                                <rect x="25" y="47" width="8" height="14" rx="2" fill="#fbbf24"/>
+                                <rect x="67" y="47" width="8" height="14" rx="2" fill="#fbbf24"/>
+                                <rect x="33" y="52" width="34" height="4" rx="2" fill="#fbbf24"/>
+                                <circle cx="50" cy="74" r="10" fill="#022c22" stroke="#fbbf24" stroke-width="1.5"/>
+                                <text x="50" y="78" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="900" fill="#fbbf24" text-anchor="middle">RT</text>
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="text-xl font-black text-white">Raj Traders</span>
+                            <p class="text-[10px] text-amber-400 font-bold uppercase tracking-wider">Gym & Nutrition Hub</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Jaunpur City's trusted fitness destination. Focused on 100% genuine supplements, robust gym infrastructure, and results-driven training under the guidance of Rider.
+                    </p>
+                    <div class="text-xs text-slate-400">
+                        <p class="font-semibold text-slate-200">Founder & Trainer:</p>
+                        <p>Rider • Estd. 2022</p>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white text-sm font-bold uppercase tracking-wider mb-4">Quick Navigation</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#about" class="hover:text-emerald-400 transition-colors">Our Philosophy</a></li>
+                        <li><a href="#services" class="hover:text-emerald-400 transition-colors">Programs & Supplements</a></li>
+                        <li><a href="#founder" class="hover:text-emerald-400 transition-colors">Founder Rider's Vision</a></li>
+                        <li><a href="#offer" class="hover:text-emerald-400 transition-colors">20% Regular Customer Offer</a></li>
+                        <li><a href="#contact" class="hover:text-emerald-400 transition-colors">Contact & Timings</a></li>
+                    </ul>
+                </div>
+
+                <!-- Operating Shifts -->
+                <div>
+                    <h4 class="text-white text-sm font-bold uppercase tracking-wider mb-4">Center Hours</h4>
+                    <ul class="space-y-2.5 text-xs">
+                        <li class="flex items-center justify-between">
+                            <span class="text-slate-400">Morning Session:</span>
+                            <span class="text-slate-200 font-bold">6 AM – 12 PM</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span class="text-slate-400">Desk / Store:</span>
+                            <span class="text-amber-300 font-bold">9 AM – 12 PM</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span class="text-slate-400">Evening Session:</span>
+                            <span class="text-slate-200 font-bold">4:30 PM – 9:30 PM</span>
+                        </li>
+                        <li class="pt-2 text-[11px] text-emerald-400 font-semibold">
+                            Open 7 Days a Week in Jaunpur City
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Verified Contact Info -->
+                <div>
+                    <h4 class="text-white text-sm font-bold uppercase tracking-wider mb-4">Contact Information</h4>
+                    <ul class="space-y-2.5 text-xs">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                            <span>Jaunpur City, Uttar Pradesh, India</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="phone" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                            <a href="tel:2536374746" class="hover:text-white font-bold">2536374746</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="message-circle" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                            <a href="https://wa.me/915836528567" target="_blank" rel="noopener noreferrer" class="hover:text-white font-bold">+91 5836528567</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="mail" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                            <a href="mailto:dhhsc4746@gmail.com" class="hover:text-white">dhhsc4746@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bottom Copyright -->
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+                <p>© 2026 Raj Traders. All rights reserved. Created with high-converting digital excellence.</p>
+                <p class="flex items-center gap-1">
+                    <span>Always Focus On Quality</span>
+                    <span class="text-amber-400">•</span>
+                    <span>Jaunpur City</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Floating Quick Contact Bar -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-lg border-t border-slate-200 px-4 py-2.5 flex items-center justify-between gap-3 shadow-2xl">
+        <a href="tel:2536374746" class="flex-1 bg-brand-600 active:bg-brand-700 text-white py-2.5 rounded-xl font-extrabold text-xs flex items-center justify-center gap-2 shadow-sm">
+            <i data-lucide="phone-call" class="w-4 h-4"></i>
+            Call Rider
+        </a>
+        <a href="https://wa.me/915836528567?text=Hi%20Raj%20Traders,%20I%20want%20to%20know%20more%20about%20gym%20and%20supplements." target="_blank" rel="noopener noreferrer" class="flex-1 bg-emerald-500 active:bg-emerald-600 text-white py-2.5 rounded-xl font-extrabold text-xs flex items-center justify-center gap-2 shadow-sm">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            WhatsApp
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Form handler
+        function handleInquiry(e) {
+            e.preventDefault();
+            const name = document.getElementById('inq_name').value.trim();
+            const phone = document.getElementById('inq_phone').value.trim();
+            const service = document.getElementById('inq_service').value;
+            const message = document.getElementById('inq_message').value.trim();
+
+            const text = `*New Inquiry for Raj Traders*%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Interest:* ${encodeURIComponent(service)}%0A*Message:* ${encodeURIComponent(message || 'N/A')}`;
+            
+            document.getElementById('formSuccess').classList.remove('hidden');
+            
+            setTimeout(() => {
+                window.open(`https://wa.me/915836528567?text=${text}`, '_blank');
+            }, 600);
+        }
+    </script>
+</body>
+</html>
